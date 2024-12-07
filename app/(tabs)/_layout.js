@@ -5,7 +5,12 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 const Layout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "orange" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "orange",
+        headerShown: false, // This disables the header
+      }}
+    >
       <Tabs.Screen
         name="search"
         options={{
